@@ -1,0 +1,10 @@
+com\utils\SpiceJetWrappers.class
+com\utils\RobotClass.class
+com\test\SignUpTest.class
+com\test\OneWayTest.class
+com\pages\OneWayTrip.class
+com\utils\SeWrappers.class
+com\pages\PassengersDeatils.class
+com\test\PassengersDeatilsTest.class
+com\utils\Reports.class
+com\pages\SignUpPage.class

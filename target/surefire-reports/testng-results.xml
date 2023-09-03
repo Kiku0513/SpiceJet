@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-03T19:42:24 IST" name="Suite" finished-at="2023-09-03T19:44:12 IST" duration-ms="108158">
+    <groups>
+    </groups>
+    <test started-at="2023-09-03T19:42:24 IST" name="SpiceJetTest" finished-at="2023-09-03T19:44:12 IST" duration-ms="108158">
+      <class name="com.test.OneWayTest">
+        <test-method signature="signUpWithValidCredentials()[pri:0, instance:com.test.OneWayTest@5ab956d7]" started-at="2023-09-03T19:43:53 IST" name="signUpWithValidCredentials" finished-at="2023-09-03T19:44:12 IST" duration-ms="19182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithValidCredentials -->
+      </class> <!-- com.test.OneWayTest -->
+      <class name="com.test.SignUpTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.test.SignUpTest@1a942c18]" started-at="2023-09-03T19:42:23 IST" name="startReport" finished-at="2023-09-03T19:42:24 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method signature="signUpWithValidCredentials()[pri:0, instance:com.test.SignUpTest@1a942c18]" started-at="2023-09-03T19:42:24 IST" name="signUpWithValidCredentials" finished-at="2023-09-03T19:43:53 IST" duration-ms="88938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithValidCredentials -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.test.SignUpTest@1a942c18]" started-at="2023-09-03T19:44:12 IST" name="endReport" finished-at="2023-09-03T19:44:12 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.test.SignUpTest -->
+    </test> <!-- SpiceJetTest -->
+  </suite> <!-- Suite -->
+</testng-results>

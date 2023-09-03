@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-03T22:40:45 IST" name="Default suite" finished-at="2023-09-03T22:41:01 IST" duration-ms="15662">
+    <groups>
+    </groups>
+    <test started-at="2023-09-03T22:40:45 IST" name="Default test" finished-at="2023-09-03T22:41:01 IST" duration-ms="15662">
+      <class name="com.test.LoginTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.test.LoginTest@712625fd]" started-at="2023-09-03T22:40:45 IST" name="startReport" finished-at="2023-09-03T22:40:45 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method signature="signUpWithValidCredentials()[pri:0, instance:com.test.LoginTest@712625fd]" started-at="2023-09-03T22:40:45 IST" name="signUpWithValidCredentials" finished-at="2023-09-03T22:41:01 IST" duration-ms="15630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithValidCredentials -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.test.LoginTest@712625fd]" started-at="2023-09-03T22:41:01 IST" name="endReport" finished-at="2023-09-03T22:41:01 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.test.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
