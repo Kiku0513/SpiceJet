@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="SpiceJetTest">
-    <classes>
-   <!--<class name="com.test.SignUpTest"/> -->  
-      <class name="com.test.OneWayTest"/>
-       <class name="com.test.PassengersDeatilsTest"/>
-    </classes>
-  </test> <!-- SpiceJetTest -->
-</suite> <!-- Suite -->
+	<test name="Positive Test Cases">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="com.SpiceJet.test.SignUpTest" />
+			<class name="com.SpiceJet.test.LoginTest" />
+			<class name="com.SpiceJet.test.OneWayTest" />
+			<class name="com.SpiceJet.test.RoundTripTest" />
+			<class name="com.SpiceJet.test.FieldsAvailableTest" />
+			<!--<class name="com.SpiceJet.test.PayementSpiceJet" />-->
+		</classes>
+	</test>
+	<test name="NegativeTc">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="com.SpiceJet.test.NeagtiveTc_SignUp" />
+			<class name="com.SpiceJet.test.NegativeTc_Login" />
+		</classes>
+
+	</test>
+
+</suite> <!--
+Suite -->

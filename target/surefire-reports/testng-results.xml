@@ -1,31 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="18" total="25" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-03T19:42:24 IST" name="Suite" finished-at="2023-09-03T19:44:12 IST" duration-ms="108158">
+  <suite started-at="2023-09-04T20:52:41 IST" name="Suite" finished-at="2023-09-04T20:56:09 IST" duration-ms="207421">
     <groups>
     </groups>
-    <test started-at="2023-09-03T19:42:24 IST" name="SpiceJetTest" finished-at="2023-09-03T19:44:12 IST" duration-ms="108158">
+    <test started-at="2023-09-04T20:52:41 IST" name="Test" finished-at="2023-09-04T20:56:09 IST" duration-ms="207421">
       <class name="com.test.OneWayTest">
-        <test-method signature="signUpWithValidCredentials()[pri:0, instance:com.test.OneWayTest@5ab956d7]" started-at="2023-09-03T19:43:53 IST" name="signUpWithValidCredentials" finished-at="2023-09-03T19:44:12 IST" duration-ms="19182" status="PASS">
+        <test-method signature="signUpWithValidCredentials()[pri:0, instance:com.test.OneWayTest@6e6f2380]" started-at="2023-09-04T20:52:55 IST" name="signUpWithValidCredentials" finished-at="2023-09-04T20:53:13 IST" duration-ms="17745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpWithValidCredentials -->
       </class> <!-- com.test.OneWayTest -->
-      <class name="com.test.SignUpTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.test.SignUpTest@1a942c18]" started-at="2023-09-03T19:42:23 IST" name="startReport" finished-at="2023-09-03T19:42:24 IST" duration-ms="335" status="PASS">
+      <class name="com.test.RoundTripTest">
+        <test-method signature="rundTripVali()[pri:0, instance:com.test.RoundTripTest@53fe15ff]" started-at="2023-09-04T20:53:39 IST" name="rundTripVali" finished-at="2023-09-04T20:54:41 IST" duration-ms="61713" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method signature="signUpWithValidCredentials()[pri:0, instance:com.test.SignUpTest@1a942c18]" started-at="2023-09-03T19:42:24 IST" name="signUpWithValidCredentials" finished-at="2023-09-03T19:43:53 IST" duration-ms="88938" status="PASS">
+        </test-method> <!-- rundTripVali -->
+      </class> <!-- com.test.RoundTripTest -->
+      <class name="com.test.FieldsAvailableTest">
+        <test-method signature="fieldsAvailableCheking()[pri:0, instance:com.test.FieldsAvailableTest@2e8c1c9b]" started-at="2023-09-04T20:53:27 IST" name="fieldsAvailableCheking" finished-at="2023-09-04T20:53:39 IST" duration-ms="12399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fieldsAvailableCheking -->
+      </class> <!-- com.test.FieldsAvailableTest -->
+      <class name="com.test.PassengersDeatilsTest">
+        <test-method signature="signUpWithValidCredentials()[pri:0, instance:com.test.PassengersDeatilsTest@76a4ebf2]" started-at="2023-09-04T20:53:13 IST" name="signUpWithValidCredentials" finished-at="2023-09-04T20:53:27 IST" duration-ms="14194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpWithValidCredentials -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.test.SignUpTest@1a942c18]" started-at="2023-09-03T19:44:12 IST" name="endReport" finished-at="2023-09-03T19:44:12 IST" duration-ms="452" status="PASS">
+      </class> <!-- com.test.PassengersDeatilsTest -->
+      <class name="com.test.SignUpTest">
+        <test-method signature="signUpWithValidCredentials()[pri:0, instance:com.test.SignUpTest@449a4f23]" started-at="2023-09-04T20:54:41 IST" name="signUpWithValidCredentials" finished-at="2023-09-04T20:56:02 IST" duration-ms="80594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithValidCredentials -->
+      </class> <!-- com.test.SignUpTest -->
+      <class name="com.test.PayementSpiceJet">
+        <test-method signature="payment()[pri:0, instance:com.test.PayementSpiceJet@1530c739]" started-at="2023-09-04T20:56:02 IST" name="payment" finished-at="2023-09-04T20:56:08 IST" duration-ms="6709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payment -->
+      </class> <!-- com.test.PayementSpiceJet -->
+      <class name="com.test.LoginTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.test.LoginTest@f78a47e]" started-at="2023-09-04T20:52:41 IST" name="startReport" finished-at="2023-09-04T20:52:41 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method signature="signUpWithValidCredentials()[pri:0, instance:com.test.LoginTest@f78a47e]" started-at="2023-09-04T20:52:42 IST" name="signUpWithValidCredentials" finished-at="2023-09-04T20:52:55 IST" duration-ms="13548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithValidCredentials -->
+        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.test.LoginTest@f78a47e]" started-at="2023-09-04T20:56:08 IST" name="closeAllBrowsers" finished-at="2023-09-04T20:56:09 IST" duration-ms="482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAllBrowsers -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.test.LoginTest@f78a47e]" started-at="2023-09-04T20:56:09 IST" name="endReport" finished-at="2023-09-04T20:56:09 IST" duration-ms="372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.test.SignUpTest -->
-    </test> <!-- SpiceJetTest -->
+      </class> <!-- com.test.LoginTest -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
