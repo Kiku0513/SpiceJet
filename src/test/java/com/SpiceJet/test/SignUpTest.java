@@ -21,17 +21,15 @@ public class SignUpTest extends SeWrappers
 		try
 		{
 			Reports.setTCDesc("Validating SignUp of SpiceJet functionality with valid credentials");
-			launchBrowser("https://www.spicejet.com");
+			launchBrowser();
 			w3.signpage("Mrs","Komal","Nikame","09/05/1993","7350448434","komalnikame933@gmail.com","Flight@241222","Flight@241222");
-             Assert.assertFalse(false);
-            se.closeAllBrowsers();
+		    Assert.assertFalse(false);
 		}
 		catch(Exception ex)
 		{
 			ex.printStackTrace();
 			System.out.println("Fail to SignUp");
 			Reports.reportStep("FAIL", "Problem while SignUp");
-            Assert.assertFalse(false);
 
 		}
 	}

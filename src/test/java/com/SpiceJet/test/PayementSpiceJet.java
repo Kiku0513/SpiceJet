@@ -19,7 +19,7 @@ public class PayementSpiceJet extends SeWrappers
 		try
 		{
 			Reports.setTCDesc("Validating PaymentPage of SpiceJet functionality with dummy credentials");
-			launchBrowser("https://www.spicejet.com");
+			launchBrowser();
 			sp.paymentDummy("1234567891012345", "komal", "08", "24" ,"087");
 			String actual="Please enter a valid card";
 			Assert.assertFalse(false, actual);

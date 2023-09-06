@@ -18,8 +18,8 @@ public class FieldsAvailableTest  extends SeWrappers
 	{
 		try
 		{
-			Reports.setTCDesc("Validating Fields Available of SpiceJet functionality with valid credentials");
-			launchBrowser("https://www.spicejet.com");
+			Reports.setTCDesc("Validating Fields Available of SpiceJet functionality ");
+			launchBrowser();
 			sp.fieldsAvailableCheck();
 			String actual="View / Manage Booking";
 			String excep=driver.findElement(By.xpath("xpath=//div[text()='View / Manage Booking']")).getText();

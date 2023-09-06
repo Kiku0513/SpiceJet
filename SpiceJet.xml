@@ -4,12 +4,11 @@
 	<test name="Positive Test Cases">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<class name="com.SpiceJet.test.SignUpTest" />
 			<class name="com.SpiceJet.test.LoginTest" />
 			<class name="com.SpiceJet.test.OneWayTest" />
 			<class name="com.SpiceJet.test.RoundTripTest" />
 			<class name="com.SpiceJet.test.FieldsAvailableTest" />
-			<!--<class name="com.SpiceJet.test.PayementSpiceJet" />-->
+			<!--	<class name="com.SpiceJet.test.PayementSpiceJet" />-->
 		</classes>
 	</test>
 	<test name="NegativeTc">

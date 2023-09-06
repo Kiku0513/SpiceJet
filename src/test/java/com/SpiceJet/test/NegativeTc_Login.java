@@ -21,7 +21,7 @@ public class NegativeTc_Login extends SeWrappers
 		{
 
 			Reports.setTCDesc("Validating LoginPage of SpiceJet functionality with Invalid credentials");
-			se.launchBrowser("https://www.spicejet.com");
+			se.launchBrowser();
 			sp.loginpageW("9991883","Kiku@0513");
 			se.screenshot("Neg_Cred_LoginPage");
 			driver.switchTo().defaultContent();

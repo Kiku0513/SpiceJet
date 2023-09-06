@@ -13,12 +13,12 @@ public class NeagtiveTc_SignUp extends SeWrappers
 	SpiceJetWrappers w3=new SpiceJetWrappers();
 	SeWrappers se=new SeWrappers();
 	@Test
-	public void signUpWithValidCredentials()
+	public void signUpWithInValidCredentials()
 	{
 		try
 		{
-			Reports.setTCDesc("Validating SignUp of SpiceJet functionality with valid credentials");
-			launchBrowser("https://www.spicejet.com");
+			Reports.setTCDesc("Validating SignUp of SpiceJet functionality with Invalid credentials");
+			launchBrowser();
 			w3.signpage("Mrs","123456677","Nikame","09/05/1993","7350448434","komalnikame933@gmail.com","Flight@241222","Flight@241222");
 			se.screenshot("NegativeTC_InValidName");
 			Assert.assertFalse(false);

@@ -77,7 +77,6 @@ public class SignUpPage extends SeWrappers
 	    se.waitForMeExplicit(firstName, 10);
 		sendkeys(firstName,fname);
 		sendkeys(lastName,lname);
-		click(calenderClick);
 		sendkeys(calenderClick,month2);
 		Thread.sleep(2000);
 		se.jsDownScroll(0, 400);

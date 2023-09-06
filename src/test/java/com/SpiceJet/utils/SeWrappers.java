@@ -16,6 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -33,38 +34,43 @@ import com.SpiceJet.utils.Reports;
 public class SeWrappers extends Reports  //Spicet
 {
 	public static WebDriver driver=null;
-	@BeforeMethod
-	@Parameters({"browser"})
-	public void launchBrowser(String browsername)
+
+	static String browsername;
+
+	@BeforeClass
+	@Parameters("browser")
+	public void setUp(String browser)
+	{
+
+		this.browsername = browser;
+	}
+	public void launchBrowser()
 	{
 		try
 		{
-			ChromeOptions opt=new ChromeOptions();
-			opt.addArguments("--disable-notifications");
-
 			if(browsername.equalsIgnoreCase("chrome"))
 			{
-				driver=new ChromeDriver(opt);	
+				ChromeOptions opt=new ChromeOptions();
+				opt.addArguments("--disable-notifications");
+				driver=new ChromeDriver(opt);
 			}
-			else if(browsername.equalsIgnoreCase("edge"))
+			else
 			{
-				driver=new EdgeDriver();
+				EdgeOptions opt=new EdgeOptions();
+				opt.addArguments("--disable-notifications");
+				driver=new EdgeDriver(opt);
 			}
-			else if(browsername.equalsIgnoreCase("Firefox"))
-			{
-				driver=new FirefoxDriver();
-			}
+
 
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-			driver.get(browsername);
+			driver.get("https://www.spicejet.com/");
 			Reports.reportStep("PASS", "The chrome browser launched successfully with the given url ("+browsername+")");
 
 		}
-
 		catch(Exception ex)
 		{
-			//System.out.println("Problem in launching the browser");
+			System.out.println("Problem in launching the browser");
 			Reports.reportStep("FAIL", "Problem while launching the chrome browser with the given url ("+browsername+")");
 			ex.printStackTrace();
 		}
@@ -88,7 +94,7 @@ public class SeWrappers extends Reports  //Spicet
 	}
 
 	//methods to close the current active browser
-	
+
 	//sendkeys	
 	public void sendkeys(WebElement ele, String text)
 	{
@@ -109,9 +115,9 @@ public class SeWrappers extends Reports  //Spicet
 		}
 
 	}
-	
 
-	
+
+
 	//click 
 	public void click(WebElement ele)
 	{
