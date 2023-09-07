@@ -86,9 +86,9 @@ public class OneWayTripPage extends SeWrappers
 	se1.actionClick(passenger);
 	se1.adultSel(adult, n);
 	se1.actionClick(searchFlight);
-	se1.screenshot("OneWayTrip");
 	Thread.sleep(2000);
 	se1.waitForMeExplicit(continuebtn, 10);
+	se1.screenshot("OneWayTrip");
 	se1.actionClick(continuebtn);
 	se1.actionClick(title);
 	se1.actionClick(title1);
@@ -102,6 +102,7 @@ public class OneWayTripPage extends SeWrappers
 	se1.sendkeys(fname2, firstName1);
 	se1.actionSendkeys(lname2, lastName1);
 	se1.sendkeys(mobNo2, phoneNo);
+	se1.screenshot("PassengersDeatils");
 	se1.click(continuebttn);
 	se1.addspop();
 

@@ -42,7 +42,7 @@ public class RoundTripPage  extends SeWrappers
 	@FindBy(xpath="//*[@class='css-1dbjc4n r-18u37iz']//*[contains(text(),'Continue')]")
 	WebElement continuebtn;
 
-	public void roundWayTrip(String month1,String year1,String date1,String month2,String year2,String date2,int n,int m,int l)
+	public void roundWayTrip(String month1,String year1,String date1,String month2,String year2,String date2,int n,int m,int l) throws InterruptedException
 	{	se1.actionClick(roundTrip);
 		se1.actionClick(originClick);
 		se1.actionClick(origin);
@@ -54,7 +54,9 @@ public class RoundTripPage  extends SeWrappers
 		se1.actionClick(typesofPassengers);
 		se1.actionClick(searchFlight);
 		se1.waitForMeExplicit(continuebtn, 10);
+		se1.screenshot("OneWayTrip");
 		se1.actionClick(continuebtn);
+		Thread.sleep(1000);
 
 	}
 

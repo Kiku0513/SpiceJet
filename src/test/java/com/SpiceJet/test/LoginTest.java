@@ -22,9 +22,9 @@ public class LoginTest extends SeWrappers
 		try
 		{
 			
-			Reports.setTCDesc("Validating LoginPage of SpiceJet functionality with valid credentials");
+			Reports.setTCDesc("LoginPage of SpiceJet functionality with valid credentials");
 			launchBrowser();
-			sp.loginpageW("9421991883","Kiku@0513");
+			sp.loginPage("9421991883","Kiku@0513");
 			String actual="Hi Komal";
 			String excep=driver.findElement(By.xpath("//div[text()='Hi Komal']")).getText();
 			Assert.assertEquals(actual,excep);

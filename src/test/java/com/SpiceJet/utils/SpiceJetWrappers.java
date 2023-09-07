@@ -12,9 +12,8 @@ public class SpiceJetWrappers extends SeWrappers
 		try
 		{
 			FieldsAvailablePage fdPage= PageFactory.initElements(driver, FieldsAvailablePage.class);
-			fdPage.fields();
-			screenshot("ManageBooking");
-
+			fdPage.fieldsChecking();
+			
 		}
 		catch(Exception ex)
 		{
@@ -40,7 +39,7 @@ public class SpiceJetWrappers extends SeWrappers
 	}
 
 
-	public void loginpageW(String phoneNo,String pwd)
+	public void loginPage(String phoneNo,String pwd)
 	{
 		try
 		{
@@ -62,8 +61,7 @@ public class SpiceJetWrappers extends SeWrappers
 		{
 			OneWayTripPage oneTrip= PageFactory.initElements(driver, OneWayTripPage.class);
 			oneTrip.oneWayTrip1(n ,myCity,firstName1,lastName1,phoneNo);
-            Thread.sleep(2000);
-        	screenshot("OneWayTripWithPassengersdet");
+           
 		}
 		catch(Exception ex)
 		{

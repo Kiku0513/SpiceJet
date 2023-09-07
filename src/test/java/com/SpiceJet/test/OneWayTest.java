@@ -16,7 +16,7 @@ public class OneWayTest extends SeWrappers
 	{
 		try
 		{
-			Reports.setTCDesc("Validating  OneWayTrip With Passenger Details of SpiceJet functionality");
+			Reports.setTCDesc("OneWayTrip With Passenger Details of SpiceJet functionality");
 			lg.loginWithValidCredentials();
 			sp.oneWay(1,"Komal","Nikame","8208463464","komalnikame933@gmail.com","Pune","Ashish","Nikame","7350448722");
 			

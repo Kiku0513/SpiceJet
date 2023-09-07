@@ -34,6 +34,9 @@ public class SignUpPage extends SeWrappers
 	@FindBy(xpath="//*[@id='dobDate']")
 	WebElement calenderClick;
 
+	@FindBy(xpath="//*[@aria-label='Choose Sunday, September 5th, 1993']")
+	WebElement dateClick;
+	
 	//Select month
 	@FindBy(xpath="//*[@class='react-datepicker__month-select']")
 	WebElement month;
@@ -78,8 +81,9 @@ public class SignUpPage extends SeWrappers
 		sendkeys(firstName,fname);
 		sendkeys(lastName,lname);
 		sendkeys(calenderClick,month2);
+		Thread.sleep(1000);;;
+		se.doubleClick(dateClick);
 		Thread.sleep(2000);
-		se.jsDownScroll(0, 400);
 		se.actionClick(mobNo);
 		sendkeys(mobNo,phone);
 		se.waitForMeExplicitwait(loader1, 10);

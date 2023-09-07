@@ -20,10 +20,10 @@ public class SignUpTest extends SeWrappers
 	{
 		try
 		{
-			Reports.setTCDesc("Validating SignUp of SpiceJet functionality with valid credentials");
+			Reports.setTCDesc("SignUp of SpiceJet functionality with valid credentials");
 			launchBrowser();
 			w3.signpage("Mrs","Komal","Nikame","09/05/1993","7350448434","komalnikame933@gmail.com","Flight@241222","Flight@241222");
-		    Assert.assertFalse(false);
+		  
 		}
 		catch(Exception ex)
 		{
@@ -38,7 +38,7 @@ public class SignUpTest extends SeWrappers
 	{
 		try
 		{
-			driver.close();
+			driver.	quit();
 			Reports.reportStep("PASS", "Browser closed successfully");
 		}
 		catch(Exception ex)

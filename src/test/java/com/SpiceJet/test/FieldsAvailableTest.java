@@ -18,7 +18,7 @@ public class FieldsAvailableTest  extends SeWrappers
 	{
 		try
 		{
-			Reports.setTCDesc("Validating Fields Available of SpiceJet functionality ");
+			Reports.setTCDesc("Fields Available of SpiceJet functionality ");
 			launchBrowser();
 			sp.fieldsAvailableCheck();
 			String actual="View / Manage Booking";
