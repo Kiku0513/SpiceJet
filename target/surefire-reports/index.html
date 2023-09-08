@@ -271,7 +271,6 @@
       &lt;class name=&quot;com.SpiceJet.test.OneWayTest&quot;/&gt;
       &lt;class name=&quot;com.SpiceJet.test.RoundTripTest&quot;/&gt;
       &lt;class name=&quot;com.SpiceJet.test.FieldsAvailableTest&quot;/&gt;
-      &lt;class name=&quot;com.SpiceJet.utils.Reports&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Positive Test Cases --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;NegativeTc&quot; verbose=&quot;0&quot;&gt;
@@ -292,7 +291,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Positive Test Cases (6 classes)</span>
+                <span class="test-name">Positive Test Cases (5 classes)</span>
               </li>
               <li>
                 <span class="test-name">NegativeTc (2 classes)</span>
@@ -323,38 +322,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'oneWayTrip')
-data.setCell(0, 2, 'com.SpiceJet.test.OneWayTest')
-data.setCell(0, 3, 144888);
+data.setCell(0, 1, 'signUpWithInValidCredentials')
+data.setCell(0, 2, 'com.SpiceJet.test.NeagtiveTc_SignUp')
+data.setCell(0, 3, 38286);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'roundTripVali')
-data.setCell(1, 2, 'com.SpiceJet.test.RoundTripTest')
-data.setCell(1, 3, 107222);
+data.setCell(1, 1, 'signUpWithValidCredentials')
+data.setCell(1, 2, 'com.SpiceJet.test.SignUpTest')
+data.setCell(1, 3, 36531);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'signUpWithValidCredentials')
-data.setCell(2, 2, 'com.SpiceJet.test.SignUpTest')
-data.setCell(2, 3, 72629);
+data.setCell(2, 1, 'oneWayTrip')
+data.setCell(2, 2, 'com.SpiceJet.test.OneWayTest')
+data.setCell(2, 3, 25964);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'signUpWithInValidCredentials')
-data.setCell(3, 2, 'com.SpiceJet.test.NeagtiveTc_SignUp')
-data.setCell(3, 3, 70358);
+data.setCell(3, 1, 'loginWithInValidCredentials')
+data.setCell(3, 2, 'com.SpiceJet.test.NegativeTc_Login')
+data.setCell(3, 3, 25311);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginWithInValidCredentials')
-data.setCell(4, 2, 'com.SpiceJet.test.NegativeTc_Login')
-data.setCell(4, 3, 27140);
+data.setCell(4, 1, 'roundTripVali')
+data.setCell(4, 2, 'com.SpiceJet.test.RoundTripTest')
+data.setCell(4, 3, 19757);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'fieldsAvailableCheking')
 data.setCell(5, 2, 'com.SpiceJet.test.FieldsAvailableTest')
-data.setCell(5, 3, 12493);
+data.setCell(5, 3, 11455);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'loginWithValidCredentials')
 data.setCell(6, 2, 'com.SpiceJet.test.LoginTest')
-data.setCell(6, 3, 12057);
+data.setCell(6, 3, 8704);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -369,7 +368,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -378,15 +377,6 @@ return data;
                 <span class="ignored-method-name">endReport</span>
                 <br/>
                 <span class="ignored-method-name">startReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.SpiceJet.utils.Reports</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">startReport</span>
-                <br/>
-                <span class="ignored-method-name">endReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -444,140 +434,140 @@ return data;
               <div class="chronological-class-name">com.SpiceJet.test.SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">689 ms</span>
+                <span class="method-start">243 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">signUpWithValidCredentials</span>
-                <span class="method-start">737 ms</span>
+                <span class="method-start">254 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">73368 ms</span>
+                <span class="method-start">36786 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">73654 ms</span>
+                <span class="method-start">37095 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.SpiceJet.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">73656 ms</span>
+                <span class="method-start">37099 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredentials</span>
-                <span class="method-start">73657 ms</span>
+                <span class="method-start">37100 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">85716 ms</span>
+                <span class="method-start">45805 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">85969 ms</span>
+                <span class="method-start">45919 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.SpiceJet.test.OneWayTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">86148 ms</span>
+                <span class="method-start">46000 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">oneWayTrip</span>
-                <span class="method-start">86150 ms</span>
+                <span class="method-start">46002 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">231039 ms</span>
+                <span class="method-start">71966 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">231046 ms</span>
+                <span class="method-start">72078 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.SpiceJet.test.RoundTripTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">roundTripVali</span>
-                <span class="method-start">231225 ms</span>
+                <span class="method-start">72198 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">231225 ms</span>
+                <span class="method-start">72198 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">338447 ms</span>
+                <span class="method-start">91955 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">338584 ms</span>
+                <span class="method-start">92200 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.SpiceJet.test.FieldsAvailableTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">338766 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">fieldsAvailableCheking</span>
-                <span class="method-start">338767 ms</span>
+                <span class="method-start">92315 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">92315 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">351260 ms</span>
+                <span class="method-start">103771 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">351623 ms</span>
+                <span class="method-start">104063 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.SpiceJet.test.NeagtiveTc_SignUp</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">351818 ms</span>
+                <span class="method-start">104222 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">signUpWithInValidCredentials</span>
-                <span class="method-start">351820 ms</span>
+                <span class="method-start">104223 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">422178 ms</span>
+                <span class="method-start">142509 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">422489 ms</span>
+                <span class="method-start">142845 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.SpiceJet.test.NegativeTc_Login</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginWithInValidCredentials</span>
-                <span class="method-start">422490 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">422490 ms</span>
+                <span class="method-start">142845 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginWithInValidCredentials</span>
+                <span class="method-start">142846 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">449631 ms</span>
+                <span class="method-start">168157 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">449634 ms</span>
+                <span class="method-start">168364 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.SpiceJet.test.NeagtiveTc_SignUp</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">449642 ms</span>
+                <span class="method-start">168489 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

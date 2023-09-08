@@ -859,7 +859,7 @@ public class SeWrappers extends Reports  //Spicet
 	{
 		try
 		{
-			WebElement continueElement = driver.findElement(By.id("skipfrompopup"));
+			WebElement continueElement = driver.findElement(By.id("at_addon_close_icon"));
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", continueElement);
 		}
@@ -867,5 +867,19 @@ public class SeWrappers extends Reports  //Spicet
 		{
 			ex.printStackTrace();
 		}
+	}
+	public boolean actionClick1(WebElement ele)
+	{
+		try
+		{
+			Actions act = new Actions(driver);
+			act.click(ele).build().perform();
+		}
+		catch(Exception ex)
+		{
+			System.out.println("problem in action click");
+			ex.printStackTrace();
+		}
+		return false;
 	}
 }

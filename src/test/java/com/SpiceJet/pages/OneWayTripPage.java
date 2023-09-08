@@ -77,6 +77,9 @@ public class OneWayTripPage extends SeWrappers
 	@FindBy(xpath="//*[@data-testid='traveller-info-continue-cta']")
 	WebElement continuebttn;
 	
+	@FindBy(xpath="//*[@class='css-1dbjc4n r-2ka9w3 r-6ity3w r-zr9zts']//*[@data-testid='add-ons-continue-footer-button'][3]")
+	WebElement continueADD;
+	
 	public void oneWayTrip1(int n,String fname1,String lname1,String phone,String mailid,String myCity,String firstName1,String lastName1,String phoneNo) throws InterruptedException
 	{
 	se1.click(originClick);
@@ -107,6 +110,9 @@ public class OneWayTripPage extends SeWrappers
 	se1.screenshot("PassengersDeatils");
 	se1.click(continuebttn);
 	se1.addspop();
+	se1.actionClick(continueADD);
+		
+	
 
 }
 }

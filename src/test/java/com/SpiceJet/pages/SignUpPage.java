@@ -61,10 +61,10 @@ public class SignUpPage extends SeWrappers
 	WebElement cPass;
 
 
-	@FindBy(id="defaultCheck1")
+	@FindBy(xpath="//*[@id='defaultCheck1']")
 	WebElement checkButton;
 
-	@FindBy(xpath="//*[@class=' mt-40 px-sm-4 col-auto']")
+	@FindBy(xpath="//*[contains(text(),'Submit')]")
 	WebElement subButton;
 	
 	By loader1=By.className("modal-open");
@@ -82,18 +82,20 @@ public class SignUpPage extends SeWrappers
 		sendkeys(lastName,lname);
 		sendkeys(calenderClick,month2);
 		Thread.sleep(1000);;;
-		se.doubleClick(dateClick);
+		se.click(dateClick);
 		Thread.sleep(2000);
-		se.actionClick(mobNo);
+		se.click(mobNo);
 		sendkeys(mobNo,phone);
-		se.waitForMeExplicitwait(loader1, 5);
+		Thread.sleep(1000);
 		sendkeys(mailId, mail);
-		se.waitForMeExplicitwait(loader1, 5);
+		Thread.sleep(0);
 		sendkeys(newPass, nPass);
 		se.waitForMeExplicitwait(loader1, 5);
 		actionSendkeys(cPass, cnfPass);
+		Thread.sleep(1000);
 		actionClick(checkButton);
-		actionClick(subButton);
+		Thread.sleep(1000);
+		se.doubleClick(subButton);
 	}
 
 	
