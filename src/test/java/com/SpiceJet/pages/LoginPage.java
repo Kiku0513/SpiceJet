@@ -29,6 +29,6 @@ public class LoginPage extends SeWrappers
 	se.actionSendkeys(mobno, phoneNo);	
 	se.actionSendkeys(pass, pwd);
 	se.click(loginButn);
-	se.waitForMeExplicit(visiblename, 10);
+	
 }
 }

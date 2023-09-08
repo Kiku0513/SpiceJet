@@ -20,7 +20,7 @@ public class RoundTripTest extends SeWrappers
 		try
 		{
 			Reports.setTCDesc(" RoundTrip of SpiceJet functionality ");
-			lg.loginWithValidCredentials();
+			se.launchBrowser();
 			sp.roundWay();
 	
 	}

@@ -53,7 +53,7 @@ public class RoundTripPage  extends SeWrappers
 		se1.roundTripGender(adult, child, infant, n,m,l);
 		se1.actionClick(typesofPassengers);
 		se1.actionClick(searchFlight);
-		se1.waitForMeExplicit(continuebtn, 10);
+		Thread.sleep(2000);
 		se1.screenshot("OneWayTrip");
 		se1.actionClick(continuebtn);
 		Thread.sleep(1000);

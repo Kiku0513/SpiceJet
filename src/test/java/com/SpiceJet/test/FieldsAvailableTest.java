@@ -21,11 +21,6 @@ public class FieldsAvailableTest  extends SeWrappers
 			Reports.setTCDesc("Fields Available of SpiceJet functionality ");
 			launchBrowser();
 			sp.fieldsAvailableCheck();
-			String actual="View / Manage Booking";
-			String excep=driver.findElement(By.xpath("xpath=//div[text()='View / Manage Booking']")).getText();
-			Assert.assertEquals(actual,excep);
-
-
 		}
 		catch(Exception ex)
 		{

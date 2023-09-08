@@ -77,24 +77,26 @@ public class OneWayTripPage extends SeWrappers
 	@FindBy(xpath="//*[@data-testid='traveller-info-continue-cta']")
 	WebElement continuebttn;
 	
-	public void oneWayTrip1(int n,String myCity,String firstName1,String lastName1,String phoneNo) throws InterruptedException
+	public void oneWayTrip1(int n,String fname1,String lname1,String phone,String mailid,String myCity,String firstName1,String lastName1,String phoneNo) throws InterruptedException
 	{
-	se1.actionClick(originClick);
-	se1.actionClick(origin);
-	se1.actionClick(departure);
+	se1.click(originClick);
+	se1.click(origin);
+	se1.click(departure);
 	se1.calender("September", "2023", "23");
 	se1.actionClick(passenger);
 	se1.adultSel(adult, n);
 	se1.actionClick(searchFlight);
 	Thread.sleep(2000);
-	se1.waitForMeExplicit(continuebtn, 10);
 	se1.screenshot("OneWayTrip");
 	se1.actionClick(continuebtn);
 	se1.actionClick(title);
 	se1.actionClick(title1);
 	
 	Thread.sleep(2000);
-	
+	se1.sendkeys(fname, fname1);
+	se1.sendkeys(lname, lname1);
+	se1.sendkeys(contactNo, phone);
+	se1.sendkeys(email, mailid);
 	se1.actionSendkeys(city, myCity);
 	se1.actionClick(myselfClick);
 	se1.click(nxtBttn);

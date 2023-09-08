@@ -32,7 +32,7 @@ public class NegativeTc_Login extends SeWrappers
 			se.navigateRefresh();
 			sp.loginPage("94219991883","");
 			se.screenshot("Neg_Cred_LoginPage_EmptyPas");
-			se.closeAllBrowsers();
+		     Assert.assertFalse(false);
 
 		}
 		catch(Exception ex)

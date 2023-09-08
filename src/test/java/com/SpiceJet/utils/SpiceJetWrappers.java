@@ -55,12 +55,12 @@ public class SpiceJetWrappers extends SeWrappers
 
 	}
 
-	public void oneWay(int n,String firstName,String lastName,String mobNo,String mailId,String myCity,String firstName1,String lastName1,String phoneNo) 
+	public void oneWay(int n,String fname1,String lname1,String phone,String mailid,String myCity,String firstName1,String lastName1,String phoneNo) 
 	{
 		try
 		{
 			OneWayTripPage oneTrip= PageFactory.initElements(driver, OneWayTripPage.class);
-			oneTrip.oneWayTrip1(n ,myCity,firstName1,lastName1,phoneNo);
+			oneTrip.oneWayTrip1(n ,fname1,lname1,phone,mailid,myCity,firstName1,lastName1,phoneNo);
            
 		}
 		catch(Exception ex)

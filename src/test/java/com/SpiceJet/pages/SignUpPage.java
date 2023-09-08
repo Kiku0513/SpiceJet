@@ -86,7 +86,7 @@ public class SignUpPage extends SeWrappers
 		Thread.sleep(2000);
 		se.actionClick(mobNo);
 		sendkeys(mobNo,phone);
-		se.waitForMeExplicitwait(loader1, 10);
+		se.waitForMeExplicitwait(loader1, 5);
 		sendkeys(mailId, mail);
 		se.waitForMeExplicitwait(loader1, 5);
 		sendkeys(newPass, nPass);
