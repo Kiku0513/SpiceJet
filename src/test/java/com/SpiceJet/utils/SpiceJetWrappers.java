@@ -22,13 +22,14 @@ public class SpiceJetWrappers extends SeWrappers
 
 	}
 
-	public void signpage(String visibleText,String fname,String lname,String month2,String phone ,String mail,String nPass,String cnfPass)
+	public void signpage(String visibleText,String fname,String lname,String Dob,String phone ,String mail,String nPass,String cnfPass)
 	{
 
 		try
 		{
 			SignUpPage sgnUp= PageFactory.initElements(driver, SignUpPage.class);
-			sgnUp.signUp(visibleText,fname,lname,month2,phone,mail,nPass,cnfPass);
+			sgnUp.signUp(visibleText, fname, lname,Dob,phone,mail,nPass,cnfPass);
+			
 			screenshot("SignUpPageOfSpiceJet");
 
 		}
@@ -74,7 +75,7 @@ public class SpiceJetWrappers extends SeWrappers
 		{
 			try
 			{
-				RoundTripPage  rndTrip= PageFactory.initElements(driver, RoundTripPage .class);
+				RoundTripPage  rndTrip= PageFactory.initElements(driver, RoundTripPage.class);
 				rndTrip.roundWayTrip("October", "2023","12", "October", "2023","17",1,2,1);
 				screenshot("RoundsWayTripScreenShot");
 			}
@@ -89,7 +90,7 @@ public class SpiceJetWrappers extends SeWrappers
 		{
 			try
 			{
-				PaymentPage payPage= PageFactory.initElements(driver, PaymentPage   .class);
+				PaymentPage payPage= PageFactory.initElements(driver, PaymentPage.class);
 				payPage.dummyPay(cnum,cname,mon,yr,cvv);
 			}
 			catch(Exception ex)

@@ -23,7 +23,7 @@ public class Reports
 		{
 			sparkReporter= new ExtentSparkReporter(System.getProperty("user.dir")+"/SpiceJetWebAutomationReport.html");
 			sparkReporter.config().setDocumentTitle("SpiceJet Automation Report");
-			sparkReporter.config().setReportName("BestBuy Web Automation");
+			sparkReporter.config().setReportName("SpiceJet Web Automation");
 			sparkReporter.config().setTheme(Theme.DARK);
 			
 			extentReports= new ExtentReports();

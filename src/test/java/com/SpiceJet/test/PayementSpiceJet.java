@@ -10,20 +10,22 @@ import com.SpiceJet.utils.SeWrappers;
 import com.SpiceJet.utils.SpiceJetWrappers;
 
 public class PayementSpiceJet extends SeWrappers
-{
-
+{	
+	SeWrappers se=new SeWrappers();
+	OneWayTest ow=new OneWayTest();
 	SpiceJetWrappers sp=new SpiceJetWrappers();
-	@Test
+	@Test(priority=5)
 	public void paymentTest()
 	{
 		try
 		{
 			Reports.setTCDesc("Validating PaymentPage of SpiceJet functionality with dummy credentials");
-			launchBrowser();
-			sp.paymentDummy("1234567891012345", "komal", "08", "24" ,"087");
-			String actual="Please enter a valid card";
+			ow.oneWayTrip();
+			sp.paymentDummy("5419190500936745", "komal", "11", "23" ,"382");
+			se.screenshot("Payment");
+		/*	String actual="Please enter a valid card";
 			Assert.assertFalse(false, actual);
-
+*/
 		}
 		catch(Exception ex)
 		{

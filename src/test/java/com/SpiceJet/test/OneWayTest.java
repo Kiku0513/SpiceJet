@@ -10,8 +10,8 @@ import com.SpiceJet.utils.SpiceJetWrappers;
 public class OneWayTest extends SeWrappers
 {
 	SpiceJetWrappers sp=new SpiceJetWrappers();
-	LoginTest lg=new LoginTest();
-	@Test
+	LoginTest_DataProvider lg=new LoginTest_DataProvider();
+	@Test(priority=3)
 	public void oneWayTrip()
 	{
 		try
@@ -31,7 +31,7 @@ public class OneWayTest extends SeWrappers
 
 		}
 	}
-	@AfterMethod
+//	@AfterMethod  
 	public void closeBrowser()
 	{
 		try

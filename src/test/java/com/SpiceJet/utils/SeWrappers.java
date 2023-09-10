@@ -2,6 +2,7 @@ package com.SpiceJet.utils;
 
 import java.io.File;
 import java.time.Duration;
+import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
@@ -650,7 +651,7 @@ public class SeWrappers extends Reports  //Spicet
 		try
 		{
 			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("arguments[0].value='+text+';",ele);
+			js.executeScript("arguments[0].value='"+text+"';",ele);
 		}
 		catch(Exception ex)
 		{
@@ -868,18 +869,35 @@ public class SeWrappers extends Reports  //Spicet
 			ex.printStackTrace();
 		}
 	}
-	public boolean actionClick1(WebElement ele)
+	public void parent()
 	{
 		try
 		{
-			Actions act = new Actions(driver);
-			act.click(ele).build().perform();
+			driver.switchTo().defaultContent();
 		}
 		catch(Exception ex)
 		{
-			System.out.println("problem in action click");
+			
 			ex.printStackTrace();
 		}
-		return false;
+	}
+	
+	
+	public void calenderSignUp() 
+	{
+		List<WebElement> dates = driver.findElements(By.xpath("//div[@class='react-datepicker__month-container']//div[@class='react-datepicker__month']/div/div"));
+		int count=dates.size();
+
+		for(int i=0;i<count;i++)
+		{
+			String text=driver.findElements(By.xpath("//div[@tabindex='-1']")).get(i).getText();
+			if(text.equalsIgnoreCase("5"))
+			{
+				driver.findElements(By.xpath("//*[@class='react-datepicker__month-container']//*[@role='button']")).get(i).click();
+				break;
+			}
+
+		} 
+	
 	}
 }

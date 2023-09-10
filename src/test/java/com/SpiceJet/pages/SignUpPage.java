@@ -84,7 +84,6 @@ public class SignUpPage extends SeWrappers
 		Thread.sleep(1000);;;
 		se.click(dateClick);
 		Thread.sleep(2000);
-		se.click(mobNo);
 		sendkeys(mobNo,phone);
 		Thread.sleep(1000);
 		sendkeys(mailId, mail);

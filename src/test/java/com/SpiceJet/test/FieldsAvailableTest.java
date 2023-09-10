@@ -13,7 +13,7 @@ public class FieldsAvailableTest  extends SeWrappers
 {
 	SpiceJetWrappers sp=new SpiceJetWrappers();
 	
-	@Test
+	@Test(priority=6)
 	public void fieldsAvailableCheking()
 	{
 		try

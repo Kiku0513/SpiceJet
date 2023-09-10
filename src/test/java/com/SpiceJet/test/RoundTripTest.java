@@ -11,10 +11,10 @@ import com.SpiceJet.utils.SpiceJetWrappers;
 
 public class RoundTripTest extends SeWrappers
 {
-	LoginTest lg=new LoginTest();
+	LoginTest_DataProvider lg=new LoginTest_DataProvider();
 	SpiceJetWrappers sp=new SpiceJetWrappers();
 	SeWrappers se=new SeWrappers();
-	@Test
+	@Test(priority=4)
 	public void roundTripVali()
 	{
 		try

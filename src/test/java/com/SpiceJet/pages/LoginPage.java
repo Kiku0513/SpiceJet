@@ -1,5 +1,6 @@
 package com.SpiceJet.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -23,11 +24,11 @@ public class LoginPage extends SeWrappers
 	WebElement visiblename;
 
 	SeWrappers se=new SeWrappers();
-	public void loginDetails(String phoneNo,String pwd)
+	public void loginDetails(String mobNo,String Password)
 	{
 	se.actionClick(login);
-	se.actionSendkeys(mobno, phoneNo);	
-	se.actionSendkeys(pass, pwd);
+	se.actionSendkeys(mobno, mobNo);
+	se.sendkeys(pass, Password);
 	se.click(loginButn);
 	
 }
